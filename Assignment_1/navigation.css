@@ -14,11 +14,16 @@
 
 	.universalNav_logo {
 		align-self: center;
-		height: 24px;
 		margin-right: auto;
 		text-align: center;
 		position: absolute;
+		height: 24px;
 		margin-bottom: 0;
+	}
+
+	.universalNav_logo img{
+		max-width: 188px;
+		max-height: 24px;
 	}
 
 	.universalNav_Menu{
