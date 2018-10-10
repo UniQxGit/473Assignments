@@ -24,6 +24,33 @@
 			position: fixed;
 		}
 
+		footer {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			height: 300px; 
+			background-color: #000;
+			color:#fff;
+		}
+
+		.footer_content {
+			display: flex;
+			flex-direction: column;
+			font-size: 13px;
+			margin: 20px;
+		}
+
+		footer a {
+			margin-bottom: 10px;
+			text-decoration: none; 
+			color: #fff;
+		}
+
+		footer a:hover {
+			text-decoration: underline;
+			color: #fff;
+		}
+
 		.HiddenMessage {
 			text-align: left;
 			font-size: 9px;
@@ -300,9 +327,77 @@
 
 	<div class="container">
 		<h1 style="text-align: left;">Frequently Asked Questions</h1>
+		<div class="faq"> 
+			<a href="#"> 
+				<h2>
+					- What is a home delivery subscription? What do i get when i subscribe?
+				</h2>
+			</a>
+			<div class="faq_content">
+				As a home delivery subscriber to The New York Times you enjoy the convenience and reliability of having the printed newspaper delivered to you first thing in the morning. Your subscription includes free Digital access, which brings you unlimited access to NYTimes.com and full access to the NYT app for smartphones and tablets. <br>
+				<br>
+				Home delivery subscribers also have free access to The New York Times Archive, featuring every article published since 1851; Times Digest, a 10-page of the top stories of The Times, emailed daily; and The New York Times Replica Edition, an exact digital replica of the printed paper that you can read online or offline -- evn when you are not connected to the internet. We also make it easy for you to supend home dlivery service while you're away on vacation. 
+			</div>
+			<a href="#"> 
+				<h2>
+					+ What is a digital subscription? What do I get when I subscribe?
+				</h2>
+			</a>
+			
+			<a href="#"> 
+				<h2>
+					+ Can i get a subscription to NYTimes.com only?
+				</h2>
+			</a>
+
+			<a href="#"> 
+				<h2>
+					+ I get home delivery of the newspaper. Do i get free access?
+				</h2>
+			</a>
+			<a href="#"> 
+				<h2>
+					+ Do you offer subscriptions to organizations?
+				</h2>
+			</a>
+			<a href="#"> 
+				<h2>
+					+ Can I give a gift subscription to The Times?
+				</h2>
+			</a>
+			<a href="#"> 
+				<h2>
+					+ What if I don't want to subscribe -- can I still read NYTimes.com for free?
+				</h2>
+			</a>
+
+		</div>
 	</div>
-	<footer style="height: 400px; background-color: #202020">
-	
+	<footer>
+		<div class="footer_content">
+			<img src="img/logo_white.png" alt="NYT Logo" style="max-width: 188px;max-height: 50px;margin-left: -7px">
+			<p style="font-size: 10px">Copyright (C)2018</p>
+		</div>
+		<div class="footer_content">
+			<p class="bold">About</p>
+			<a href="#">The New York Times Company</a>
+			<a href="#">Privacy Policy</a><br>
+			<a href="#">Terms of Sale</a><br>
+		</div>
+		<div class="footer_content">
+			<p class="bold">Help</p>
+			<a href="#">Frequently Asked Questions</a><br>
+			<a href="#">Contact Us</a><br>
+			<a href="#">Feedback</a><br>
+		</div>
+		<div class="footer_content">
+			<p class="bold">Ways to Subscribe</p>
+			<a href="#">Digital + Home Delivery</a><br>
+			<a href="#">Education Rates</a><br>
+			<a href="#">Group Subscriptions</a><br>
+			<a href="#">NYT Crossword</a><br>
+			<a href="#">Gift Subscriptions</a><br>
+		</div>
 	</footer>
 </body>
 </html>
