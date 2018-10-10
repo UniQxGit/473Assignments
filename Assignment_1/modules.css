@@ -28,7 +28,7 @@
 .subscriptions {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .subscription_content {
@@ -38,7 +38,8 @@
 	text-align: left;
 	width: 240px;
 	list-style-image: url('img/checkmark.jpg');
-	margin-left: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
 	margin-right: 0px;
 }
 
