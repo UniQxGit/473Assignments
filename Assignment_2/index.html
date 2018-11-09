@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Javascript Module</title>
+    <script src='javascripts/globalVars.js'></script>
+    <script src='javascripts/model/Student.js'></script>
+    <script src='javascripts/view/ListView.js'></script>
+    <script src='javascripts/control/StudentPageControl.js'></script>
+  </head>
+  <body id = 'b-id'>
+    <h2>Search For Students: </h2>
+  	<input id='ln_id' type='text' name='last_name' placeholder="Enter last name..">
+  	<input id='add_student_id' type='submit' value='Search'> 
+  	
+    <h2>Students Found: </h2>
+    <ul id='student_list_id'>
+  	</ul>
+
+    <h2>Grades for <span id = "student_name">(Select Name From List)</span>: </h2>
+    <table border=1 id = 'student_grades_id'>
+    <tr>
+      <th>Course</th>
+      <th>GPA</th>
+    </tr>
+   </table>
+  </body>
+  <script>
+    // if (!localStorage.students)
+    // {
+      var student;
+      student = new test.model.Student('John','Lee');
+      student.add(student);
+      student.addGrade("CS100","3.0");
+      student.addGrade("CS120","3.5");
+      student.addGrade("CS401","3.7");
+      student = new test.model.Student('John','Smith');
+      student.add(student);
+      student.addGrade("CS100","3.0");
+      student.addGrade("CS120","3.5");
+      student.addGrade("CS401","3.7");
+      student = new test.model.Student('John','Kim');
+      student.add(student);
+      student.addGrade("CS121","2.8");
+      student.addGrade("CS123","3.2");
+      student.addGrade("CS411","3.4");
+      student = new test.model.Student('John','Choi');
+      student.add(student);
+      student.addGrade("CS320","3.0");
+      student.addGrade("CS311","3.5");
+      student.addGrade("CS123","3.7");
+      student = new test.model.Student('Jenny','Lee');
+      student.addGrade("CS140","4.1");
+      student.addGrade("CS120","4.3");
+      student.addGrade("CS402","3.7");
+      student.add(student);
+      student = new test.model.Student('Jenny','Smith');
+      student.addGrade("CS102","4.1");
+      student.addGrade("CS120","4.8");
+      student.addGrade("CS481","3.5");
+      student.add(student);
+      student = new test.model.Student('Jenny','Kim');
+      student.addGrade("CS472","4.5");
+      student.addGrade("CS368","4.2");
+      student.addGrade("CS482","3.8");
+      student.add(student);
+      student = new test.model.Student('Jenny','Choi');
+      student.addGrade("CS120","4.4");
+      student.addGrade("CS120","4.2");
+      student.addGrade("CS437","5.0");
+      student.add(student);
+      student = new test.model.Student('Jenny','Gonzales');
+      student.addGrade("CS120","3.0");
+      student.addGrade("CS230","2.8");
+      student.addGrade("CS173","3.0");
+      student.add(student);
+      //Show a list of all students
+      console.log(student.getAllStudents());
+  	   console.log(test);
+  </script>
+</html>
